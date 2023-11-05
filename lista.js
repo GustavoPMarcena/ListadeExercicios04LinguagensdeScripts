@@ -26,4 +26,11 @@ function listar() {
   return listaDeCompras;
 }
 
-export { adicionar, remover, marcar, desmarcar, listar };
+function verificarID(id) {
+    listaDeCompras.forEach((element) => {
+      if(id == element.id) return 1;
+    })
+    return 0;
+}
+
+export { adicionar, remover, marcar, desmarcar, listar, verificarID };

@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css"  href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Lista de compras </title>
 </head>
+
 <body>
     <main>
         <div class="title ">
-<h1>Atividade 03 de Linguagens de Script</h1>
-        <p>Gustavo Pereira Marcena da Cruz</p>
+            <h1>Atividade 03 de Linguagens de Script</h1>
+            <p>Gustavo Pereira Marcena da Cruz</p>
         </div>
-        
+
         <section class="container">
             <h2>Adicione um novo produto:</h2>
             <div class="inputClass">
                 <input type="text" id="itemName" placeholder="Digite o item">
                 <input type="number" id="itemCost" placeholder="Preço">
-                <button id="inputButton" >Adicionar</button>
+                <button id="inputButton">Adicionar</button>
             </div>
             <h2>Produtos Adicionados:</h2>
             <div>
-                <table border="1">
-                    <tr>
-                        <th>Nome</th>
-                        <th>Preço</th>
-                        <th>Comprado</th>
-                        <th>Ações</th>
-                    </tr>
-                    <tr>
-                        <td>Nome</td>
-                        <td>Preço</td>
-                        <td><input type="checkbox" ></td>
-                        <td>Ações</td>
-                    </tr>
-          
+                <table >
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th>Comprado</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="listId">
+
+                    </tbody>
+
                 </table>
             </div>
         </section>
     </main>
 
-    <script src="index.js" type="module" ></script>
+    <script src="index.js" type="module"></script>
 </body>
+
 </html>
